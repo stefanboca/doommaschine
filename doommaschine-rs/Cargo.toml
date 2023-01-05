@@ -1,0 +1,16 @@
+[package]
+name = "doommaschine"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "doommaschine"
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+color-eyre = "0.6.2"
+image = "0.24.5"
+libc = "0.2.139"
+maschine = { git = "https://github.com/stefanboca/maschine-rs.git" }

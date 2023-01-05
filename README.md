@@ -1,3 +1,15 @@
+# Doom Maschine
+
+To compile:
+$ cd doomgeneric
+$ make -f Makefile.doommaschine
+$ cargo build --manifest-path ../doommaschine-rs/Cargo.toml --release
+
+To run:
+$ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$PWD/../doommaschine-rs/target/release ./doomgeneric -iwad ../DOOM.WAD
+
+# Original Readme
+
 # doomgeneric
 The purpose of doomgeneric is to make porting Doom easier.
 Of course Doom is already portable but with doomgeneric it is possible with just a few functions.
